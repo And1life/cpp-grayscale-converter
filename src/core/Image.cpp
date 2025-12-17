@@ -26,3 +26,28 @@ Image::Image(const std::string &filepath)
     stbi_image_free(data);
     
 }
+
+int Image::getWidth() const
+{
+    return width;
+}
+
+int Image::getHeight() const
+{
+    return height;
+}
+
+int Image::getChannels() const
+{
+    return channels;
+}
+
+int Image::getPixel(int x, int y, int channel) const
+{
+    return pixels[y][x][channel];
+}
+
+void Image::setPixel(int x, int y, int channel, int value)
+{
+    pixels[y][x][channel] = value;
+}
