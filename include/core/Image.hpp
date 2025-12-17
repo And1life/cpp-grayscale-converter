@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <string>
+#include <stdexcept>
 
 class Image
 {
@@ -21,7 +22,7 @@ private:
     std::vector<std::vector<std::vector<int>>> pixels;
 
     int width;
-    int heigth;
+    int height;
     int channels;
 
 };
