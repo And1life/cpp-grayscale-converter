@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD 11)  # Стандарт C++
 add_executable(cpp_grayscale_converter
     src/core/Image.cpp
     src/io/ConsoleOutput.cpp
-    # src/ImageFileOutput.cpp
+    src/core/ImageConverter.cpp
+    src/io/ImageFileOutput.cpp
     main.cpp
 )
 
