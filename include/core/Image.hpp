@@ -4,6 +4,7 @@
 #include <string>
 #include <stdexcept>
 
+
 class Image
 {
 
