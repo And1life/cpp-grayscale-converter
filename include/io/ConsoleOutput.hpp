@@ -1,7 +1,7 @@
 #pragma once 
 #include "io/ImageOutput.hpp"
 
-class ConsoleOutut : public ImageOutput
+class ConsoleOutput : public ImageOutput
 {
 
 public:
