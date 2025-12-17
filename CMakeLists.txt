@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.10)  # Минимальная версия CMake
-project(ImageProcessor)  # Имя проекта
+cmake_minimum_required(VERSION 3.10)  
+project(cpp-grayscale-converter)  
 
 set(CMAKE_CXX_STANDARD 11)  # Стандарт C++
 
-# Собираем исполняемый файл ImageProcessor
+
 add_executable(ImageProcessor
     # src/Image.cpp
     # src/ConsoleOutput.cpp
@@ -11,5 +11,8 @@ add_executable(ImageProcessor
     main.cpp
 )
 
-# Указываем директорию с заголовочными файлами
-target_include_directories(ImageProcessor PRIVATE include)
+
+target_include_directories(cpp-grayscale-converter PRIVATE 
+    include
+    third_party    
+)
